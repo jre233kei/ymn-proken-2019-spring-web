@@ -1,11 +1,15 @@
 
 <template lang="pug">
   div(id="app")
-    input( name = "text" type="text" v-model="text" placeholder="please input the message")
+    h1
+      | ECHO SERVER
+    input( name = "text" type="text" v-model="text" placeholder="文章を入力してください")
     button(v-on:click="submit")
       | 送信する
     p
-      | result is : {{ this.result }}
+      | 結果 : {{ this.result }}
+    p
+      | (C) Kota FUKUI
 </template>
 <script>
 
